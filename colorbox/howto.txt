@@ -1,0 +1,27 @@
+paste just above </head> :
+
+=================================================================================== 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script src="http://alblogger-gen.googlecode.com/svn/trunk/colorbox/colorbox.js" type="text/javascript"></script>
+<link href="http://alblogger-gen.googlecode.com/svn/trunk/colorbox/style1/colorbox.css" media="screen" rel="stylesheet" type="text/css" />
+<script>
+$(document).ready(function(){
+          $("a[rel='images']").colorbox({transition:"fade"}); 
+          $("a[rel='imagessamesize']").colorbox({transition:"none", width:"75%", height:"75%"});
+          $("a[rel='slideshow']").colorbox({slideshow:true}); 
+          $(".youtube").colorbox({iframe:true, innerWidth:760, innerHeight:520}); 
+          $(".vimeo").colorbox({iframe:true, innerWidth:760, innerHeight:520});
+          $(".iframe").colorbox({width:"80%", height:"80%", iframe:true}); 
+          $('a[href$=jpg]').colorbox();
+          $('a[href$=jpeg]').colorbox();
+          $('a[href$=png]').colorbox();
+          $('a[href$=gif]').colorbox();
+          $('a[href$=bmp]').colorbox();
+          $('a[href$=JPG]').colorbox();
+          $('a[href$=JPEG]').colorbox();
+          $('a[href$=pdf]').colorbox({iframe:true, innerWidth:760, innerHeight:520});
+          $('a[href$=swf]') .colorbox({iframe:true, innerWidth:660, innerHeight:420});
+
+});
+</script>
+===================================================================================
