@@ -1,0 +1,6 @@
+<!--   إضافة تلوين الكود -->
+<script type="text/javascript" src="http://alblogger-files.googlecode.com/svn/highlighter/shCore.js"></script>
+<script type="text/javascript" src="http://alblogger-files.googlecode.com/svn/highlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="http://alblogger-files.googlecode.com/svn/highlighter/shBrushCss.js"></script>
+<link type="text/css" rel="stylesheet" href="http://alblogger-files.googlecode.com/svn/highlighter/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
