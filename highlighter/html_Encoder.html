@@ -1,0 +1,44 @@
+﻿
+<script type='text/javascript'>
+// HTML2ENTITIES
+function html2entities(){
+	var re=/[()<>"&]/g
+	for (i=0; i<arguments.length; i++)
+	arguments[i].value=arguments[i].value.replace(re, function(m){return replacechar(m)})
+}
+function replacechar(match){
+	if (match=="<") return "&lt;"
+	else if (match==">") return "&gt;"
+	else if (match=="\"") return "&quot;"
+	else if (match==")") return ")"
+	else if (match=="(") return "("
+	else if (match=="&") return "&amp;"
+}
+</script>
+
+<style>
+h1 { border-bottom: 1px solid orange; color: gray;}
+#HTMLDIV {direction: rtl; margin: 0 auto; width: 600px;}
+form {margin: 0 auto;  width: 600px;}
+textarea {box-shadow: 0 0 2px silver; color: gray; direction: ltr; height: 300px; width: 600px;}
+p {	color: gray;  font: 11pt tahoma; }
+
+</style>
+<div id="HTMLDIV">
+<h1>استبدال رموز HTML بما يوافقها</h1>
+																													
+
+<p><span lang="ar-sa">لتعرض الكود مكتوباً كما هو داخل موقعك، يجب استبدال رموز
+</span>HTML<span lang="ar-sa"> الخاصة مثل ( </span><span lang="en-us">&gt;</span><span lang="ar-sa"> )&nbsp; بـ ( &amp;lt; ) ، وبهذا سيتم 
+عرضه كما هو في المتصفحات</span></p>
+
+
+<form id='html2entities' action="">
+<p><textarea name="data1"  cols="" rows=""></textarea></p>
+<p>
+<input onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" class="btn" onclick="html2entities(this.form.data1)" value="ترميز" type="button" />
+<input onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'" class="btn" name="Clear" value="مسح" type="reset" />
+</p>
+</form>
+</div>
+																																												
