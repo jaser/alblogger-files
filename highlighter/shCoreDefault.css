@@ -58,7 +58,7 @@
   position: relative !important;
   overflow: auto !important;
   font-size: 9pt !important;
-  direction: ltr !important; box-shadow: 0 0 1px silver !important;text-shadow: 0 0 5px silver !important; /* by alblogger.com ,  jaser */
+  direction: ltr !important; box-shadow: 0 0 1px silver !important;text-shadow: 0 0 5px silver !important;  padding: 5px 0 !important; /* by alblogger.com ,  jaser */
 }
 .syntaxhighlighter.source {
   overflow: hidden !important;
