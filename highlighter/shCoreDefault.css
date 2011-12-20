@@ -228,7 +228,7 @@
 }
 
 .syntaxhighlighter {
-  background-color: white !important;
+  background-color: #EAF2F1 !important; /* by jaser */
 }
 .syntaxhighlighter .line.alt1 {
   background-color: white !important;
